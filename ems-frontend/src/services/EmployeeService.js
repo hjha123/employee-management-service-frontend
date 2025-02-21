@@ -20,3 +20,7 @@ export const updateEmployee = (employeeId, employee) => {
     employee
   );
 };
+
+export const deleteEmployee = (employeeId) => {
+  return axios.delete(REST_API_BASE_URL + "/deleteEmployee/" + employeeId);
+};
